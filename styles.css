@@ -1,0 +1,383 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    background-color:blanchedalmond; 
+    
+}
+.img {
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    padding-left: 2%;
+}
+.img img {  
+    transition: transform 0.3s ease;
+}
+.img img:hover {
+    transform: scale(1.1);
+}
+.child1 {
+    display: flex;
+    gap: 4vw;
+    padding-right: 1vw;
+    font-weight: 600;
+    font-size: 1.25vw;
+}
+ button {
+    font-size: 1.5vw;
+    padding: 0.8vw 0.5vw;
+    padding-left: 2vw;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+ }
+ .img2 {
+    height: 5vh;
+    width: 5vw;
+    display: flex;
+    padding-left: 8%;
+ }
+ .img2 img {  
+    transition: transform 0.3s ease;
+}
+.img2 img:hover {
+    transform: scale(1.1);
+}
+
+ .child1 a {
+    position: relative;  
+    transition: transform 0.3s ease;  
+}
+
+ .child1 a:hover {
+    transform: scale(1.5);  
+}
+
+.button a {
+    position: relative;  
+    transition: transform 0.3s ease; 
+}
+.button a:hover {
+    transform: scale(1.2);
+}
+.nav i {
+    font-size: 5vw;
+    font-weight: 800;
+    display: none;
+}
+.content {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+}
+.animated {
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+.left{
+    height: 100%;
+    width: 62%;
+    padding: 5vw 7vw;
+    line-height: 3vw;
+    background-color:blanchedalmond;
+}
+.boxlines{
+    width: 40vw;
+    height: 12vh;
+}
+.firstbox{ 
+    width: 20%;
+    height: 10%;
+    margin-bottom: 2%;
+    padding-left: 25%;
+  }
+.secondbox { 
+    width: 20%;
+    height: 2.5%;
+    margin-right: 60%;
+    padding-right: 25%;
+    position: absolute;
+  }
+  .firstbox {
+    background: linear-gradient(to right, saddlebrown  , orange 50%);
+    left: 0;
+  }
+  
+  .secondbox {
+    background: linear-gradient(to right, orange 50% ,saddlebrown );
+    right: 0;
+  }
+.left h1 {
+    font-size: 6vw;
+    color: orange;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.left h2{
+    line-height: 10vw;
+    font-size: 2.4vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.left img {
+    margin-left: 40%;
+    height: 30%;
+    width: 23%;
+    filter: drop-shadow(15px 15px 15px black);
+}
+ 
+.right{
+    height: 100%;
+    width:60%; 
+    background-color:blanchedalmond;  
+}
+.right img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 8888;
+    animation: anim 3s linear infinite;
+    filter: drop-shadow(20px 20px 20px black);
+}
+@keyframes anim {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -10px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.bttn{
+    font-size: 2vw;
+    padding: 1.1vw 3vw;
+    padding-left: 2.5vw;
+    background:orange;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.bttn a {
+    position: relative;  
+    transition: transform 0.3s ease;
+}
+.bttn a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width:600px) {
+    .nav {
+        padding: 0 6vw;
+        height: 60px;
+    }
+    .img{
+        height: 8vh;
+        width: 8vw;
+    }
+    .child1{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .nav i {
+        display: block;
+    }
+    .content {
+        height: calc(100% - 60px);
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .firstbox{ 
+        width: 20%;
+        height: 4%;
+        margin-top: 20%;
+        margin-bottom: 6%;
+        margin-left: 30%;
+        padding-left: 50%;
+
+         
+      }
+    .secondbox { 
+        width: 20%;
+        height: 2.5%;
+        margin-right: 55%;
+        padding-right: 20%;
+        position: absolute;
+      }
+    .left{
+        width: 100%;
+        padding: 0%;
+        height: 30%;
+         
+    }
+    .right{
+        width: 100%;
+        height: 40%;
+         
+    }
+
+    .left h1{
+        font-size: 10vw;
+        padding-left: 12%;
+        margin-top: -15%;
+        line-height: 10vw;
+    }
+    .left h2 {
+        font-size: 3.3vw;
+        padding-left: 12%;
+
+    }
+    .bttn {
+        margin-left: 11vw;
+        padding: 2vw 6vw;
+        font-size: 4vw;
+    }
+    .left img{
+        position: absolute;
+        margin-left: 70%;
+        width: 20%;
+        height: auto;
+    }
+    .right img{
+        position: absolute;
+        padding: 2vw;
+        width: 100%;
+        height: 45%;
+        right: 0%;
+        margin-top: 60%;
+
+    }
+     
+}
+.fade {
+    opacity: 1;
+}
+
+.nav {
+    background-color: blanchedalmond;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+.left {
+    background-color: blanchedalmond;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+.right {
+    background-color: blanchedalmond;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+
+
+
+
+ 
+
+
+
+
+ 
