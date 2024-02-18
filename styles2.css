@@ -48,11 +48,14 @@ p, li{
     background: #ddd;
 }
 .btn-secondary{
-    border: 2px solid red;
+    border: 3px solid red;
     border-radius: 1.5em;
     color: red;
+    font-size: 2em;
+    font-weight: 1000;
     background: white;
-     letter-spacing: 0.15em;
+    letter-spacing: 0.15em;
+    margin-top: 8%;
 }
 .btn-secondary:hover{
     background: #fcf3f2;
@@ -77,7 +80,9 @@ p, li{
     color: #333333;
 }
 .text-gray{
+    margin-top: 5%;
     color: #555555;
+    font-size: 2em;
 }
 
 .bg-dark{
@@ -180,8 +185,8 @@ header{
 .row2 .text-box{
     float: left;
     width: 50%;
-}
 
+}
 .row2 .img-box,
 .row1 .text-box{
     float: right;
@@ -210,8 +215,38 @@ header{
 }
 .row .img-box img{
     display: inline-block;
+    margin-top: -1%;
+    margin-left: 8%;
+    width: 80%;
+    height: 110%;
+    filter: drop-shadow(25px 25px 25px grey);
+    object-fit: cover;
+}
+.row2 .img-box img{
+    display: inline-block;
+    margin-top: -7%;
+    margin-left: 8%;
+    width: 80%;
+    height: 110%;
+    filter: drop-shadow(25px 25px 25px grey);
+    object-fit: cover;
+}
+.row3 .img-box img{
+    display: inline-block;
+    margin-top: -17%;
+    margin-left: 2%;
     width: 100%;
-    height: 100%;
+    height: 130%;
+    filter: drop-shadow(25px 25px 25px grey);
+    object-fit: cover;
+}
+.row4 .img-box img{
+    display: inline-block;
+    margin-top: -12%;
+    margin-left: 2%;
+    width: 90%;
+    height: 120%;
+    filter: drop-shadow(25px 25px 25px grey);
     object-fit: cover;
 }
 .row::after{
@@ -364,7 +399,6 @@ header{
 .count span{
     font-weight: 700;
 }
-
 .count-box::after{
     content: '';
     display: block;
@@ -452,7 +486,6 @@ header{
  .pubg-skills .required i{
      display: inline-block;
      margin-right: 1rem;
-
  } 
  
  .pubg-skills .required h2{
@@ -625,7 +658,7 @@ header{
      .row1{
         height: auto;
          width: 100%;
-         margin-top: -35rem;
+         margin-top: -7rem;
      }
      .row2{
         margin-top: -5rem;
