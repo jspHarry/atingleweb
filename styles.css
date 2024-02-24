@@ -14,6 +14,12 @@ html, body {
     width: 100%;
 }
 
+.sidepanel{
+    display: none;
+}
+.openbtn{
+    display:  none;
+}
 .nav {
     height: 100px;
     width: 100%;
@@ -243,22 +249,68 @@ html, body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 @media (max-width:600px) {
-    .nav {
-        padding: 0 6vw;
-        height: 60px;
-    }
-    .img{
-        height: 8vh;
-        width: 8vw;
-    }
-    .child1{
-        display: none;
-    }
-    .button{
-        display: none;
-    }
-    .nav i {
+    .sidepanel {
         display: block;
+        height: 300px;
+        width: 0; 
+        position: fixed; 
+        z-index: 3;
+        top: 0;
+        right: 0;
+        background-color: #111111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+      }
+      .sidepanel .button{
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .sidepanel .button button{
+        padding-right:21px;
+        padding-left: 0px;
+      }
+      
+      .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidepanel a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      .openbtn {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        color:black;
+        padding: 10px 15px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color: #444;
+      }
+      
+    .nav {
+        display: none;
     }
     .content {
         height: calc(100% - 60px);
