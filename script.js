@@ -23,6 +23,18 @@ $(window).on("load",function() {
   //     document.getElementById('loader').style.display = 'none';
   //   }, 4000);
   // });
+  
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
+
+>>>>>>> 4754c565be4747a7bfd846ab57294058e7f4ac01
 
 
 
