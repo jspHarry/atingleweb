@@ -1,6 +1,3 @@
-
-
-
 $(window).on("load",function() {
     $(window).scroll(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -32,9 +29,6 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
-
-
->>>>>>> 4754c565be4747a7bfd846ab57294058e7f4ac01
 
 
 

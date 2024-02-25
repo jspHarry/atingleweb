@@ -24,6 +24,12 @@ html, body {
     background-color:blanchedalmond; 
     
 }
+.sidepanel{
+    display: none;
+}
+.openbtn{
+    display:  none;
+}
 .img {
     height: 10vh;
     width: 10vw;
@@ -246,7 +252,7 @@ html, body {
 @media (max-width:600px) {
     .sidepanel {
         display: block;
-        height: 300px;
+        height: 100%;
         width: 0; 
         position: fixed; 
         z-index: 3;
@@ -255,11 +261,11 @@ html, body {
         background-color: #111111;
         overflow-x: hidden;
         padding-top: 60px;
-        transition: 0.5s;
+        transition: 0.3s;
       }
       .sidepanel .button{
-        margin-top: 10px;
-        margin-left: 10px;
+        margin-top: 20px;
+        margin-left: 50px;
       }
       .sidepanel .button button{
         padding-right:21px;
