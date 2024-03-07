@@ -2,11 +2,11 @@
 
 
 .footer {
-    background-color: blanchedalmond;
+  background-color: blanchedalmond;
   position: relative;
   width: 100%;
   background: orange;
-  min-height: 100px;
+  min-height: 90px;
   padding: 10px 50px;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 .social-icon__link {
-  font-size: 4rem;
+  font-size: 2.7rem;
   color: #fff;
   margin: 10px 10px;
   display: inline-block;

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+:root{
+    --background: #ededed;
+    --border: #999999;
+    --primary-color: orange;
+    --secondary-color: orange;
+    --red:#851923;
+    --green:#298f00;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #851923;
+}
+.form{
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background: var(--background);
+    border-radius: 8px;
+}
+.form h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.form p{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.form form .error-text{
+    display: none;
+    color: var(--red);
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ffe3e5;
+    border: 1 px solid #dfa5ab;
+    margin-bottom: 4px;
+}
+.form form .success-text{
+    display: none;
+    color: var(--green);
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #9bf288;
+    border: 1 px solid #c4f7b9;
+    margin-bottom: 4px;
+}
+.form form .input{
+    position: relative;
+    display: flex;
+    margin: 40px 0 0 0;
+    flex-direction: column;
+    width: 100%;
+}
+.form form .input input{
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    padding: 2px 0;
+    border-bottom: 2px solid var(--border);
+    outline: none;
+}
+.form form .input label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--background);
+    letter-spacing: 1.5px;
+    transition: 0.19s ease-out;
+    visibility: hidden;
+}
+.form form .input input::placeholder{
+    transform: 0.29s ease-out;
+}
+.form form .input input:focus::placeholder{
+    transition: 0.29s;
+    opacity: 0;
+    visibility: hidden;
+}
+.form form .input input:focus + label,
+.form form .input input:valid + label{
+    top: -25px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 2px 5px;
+    background: var(--primary-color);
+    color: var(--background);
+    border-radius: 4px;
+    visibility: visible;
+    transition: 0.8s;
+}
+.form form .input span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.5s ease-in;
+}
+.form form .input input:focus ~ span,
+.form form .input input:valid ~ span{
+
+    width: 100%;
+    background: var(--secondary-color);
+    transition: 0.5s ease-out;
+}
+.form form input.button{
+    height: 35px;
+    border: none;
+    color: var(--background);
+    width: 100%;
+    font-size: 17px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: 2px solid var(--secondary-color);
+}
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+.form .remember{
+    margin: 10px 0;
+}
+.form .remember input{
+    margin-right: 10px;
+}
+/* verify page */
+.fields_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otp_field{
+    border-radius: 12px;
+    font-size: 40px;
+    height:70px ;
+    width: 80px;
+    border: 3px solid var(--primary-color);
+    margin: 1%;
+    text-align: center;
+    font-weight: 600;
+    outline: none;
+}
+.otp_field::-webkit-inner-spin-button,
+.otp_field::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.otp_field:valid{
+    border-color: var(--secondary-color);
+    box-shadow: 0 6px 6px -5px rgba(0,0,0,0.25);
+}
+.resend{
+    position: relative;
+    display: flex;
+    margin: 10px 0 2px 0;
+    font-size: 16px;
+    justify-content: right;
+    color: var(--primary-color);
+}
+#resend_btn{
+    border: 3px solid var(--primary-color);
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+    user-select: none;
+    display: none;
+}
+#resend_btn:hover{
+    color: var(--background);
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}

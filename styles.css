@@ -13,7 +13,6 @@ html, body {
     height: 100%;
     width: 100%;
 }
-
 .nav {
     height: 100px;
     width: 100%;
@@ -21,8 +20,10 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw;
-    background-color:blanchedalmond; 
-    
+    background-color:blanchedalmond;
+    overflow: hidden;
+    /* position: fixed;
+    transition: 0.3s; */
 }
 .sidepanel{
     display: none;
@@ -75,8 +76,8 @@ html, body {
 }
 
  .child1 a {
-    position: relative;  
-    transition: transform 0.3s ease;  
+    position: flex;
+    transition: transform 0.3s ease;
 }
 
  .child1 a:hover {
@@ -105,8 +106,8 @@ html, body {
     background-position: left top;
     padding-top: 0px;
     margin-bottom: 0px;
-    -webkit-animation-duration: 10s;
-    animation-duration: 4s;
+    -webkit-animation-duration: 8s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }

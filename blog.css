@@ -6,9 +6,14 @@
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
+    transition: 0.2s linear;
     font-family: "Lato", sans-serif;
 
+}
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
 }
 .title_section h2{
     background: #fff;
@@ -24,6 +29,7 @@
 
 .container{
     width: 100%;
+    background-color: blanchedalmond;
 }
 .container .row{
     width: 80%;
