@@ -15,35 +15,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 </head>
 <body>
     <!-- <div id="loader">
         <video id="loadingVideo" src="km_20240219_2160p_60f_20240219_113815.mp4" autoplay muted loop></video>
       </div> -->
+      
     <div class="main">
+        
         <div id="mySidepanel" class="sidepanel">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="http://localhost:3000/register.php">Resume</a>
+            <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: white;"></a>
             <a href="blog.html">Blogs</a>
-            <a href="#">Templates</a>
+            <a href="responsive-card-slider/index.html">Templates</a>
             <div class="button">
                 <button type="submit">
                    <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">Sign Up</a>
                 </button>
                </div>
-          </div>
-
+            </div>
           <button class="openbtn" onclick="openNav()">&#9776;</button>
-
         <div class="nav">
             <div class="img">
                 <img src="Atingle_crop-removebg-preview.png">
             </div>
             <div class="child1">
-                <a href="http://localhost:3000/register.php" style="text-decoration: none; color:black">Resume</a>
+                <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: black;"></a>
                 <a href="blog.html" style="text-decoration: none; color:black">Blogs</a>
-                <a href="" style="text-decoration: none; color:black">Templates</a>
+                <a href="responsive-card-slider/index.html" style="text-decoration: none; color:black">Templates</a>
             </div>
             <div class="button">
              <button type="submit">
@@ -51,10 +53,10 @@
                 <div class="img2">
                  <img src="add-friend.png">
                 </div>
+                <div id="accountInfo" style="display: none;">
              </button>
             </div>
         </div>
-        
         <div class="content">
             <div class="left">
                 <div id="animated-example" class="animated fadeInLeft">
@@ -74,7 +76,7 @@
             </div>
         </div>
     </div>
-    
+    <!-- stickyicon -->
     <div class="centertext">
         <div  data-aos="zoom-in-down"> 
         <h1>
@@ -148,7 +150,7 @@
     <div class="rowf">
         <div class="col">
             <img src="Atingle_crop-removebg-preview.png" class="footer_logo">
-            <t class="footer_about">
+            <t class="footer_about"><br>
                 At Atingle, resumes are transformed into career catalysts, launching professionals towards success. Craft your narrative with our innovative tools and expert guidance, paving the way for a thriving career journey.
             </t>
         </div>
@@ -164,24 +166,29 @@
         <div class="col">
             <h3>Links <div class="bottom_line"><span></span></div></h3>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">BLOGS</a></li>
-                <li><a href="">TEMPLATES</a></li>
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\updated\homepage.html">HOME</a></li>
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\updated\blog.html">BLOGS</a></li>
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\updated\responsive-card-slider\index.html">TEMPLATES</a></li>
             </ul>
         </div>
-    </div>
+    </div> 
         <div class="col">
             <div class="social_icons">
-                <i class="social_icon fas fa-envelope"></i> 
-                <i class="social_icon fab fa-github"></i> 
-                <i class="social_icon fab fa-instagram"></i>
+                <a href="mailto:atingle.help@gmail.com">
+                    <i class="social_icon fas fa-envelope"></i>
+                </a> 
+                <a href="https://github.com/jspHarry/atingle">
+                    <i class="social_icon fab fa-github"></i>
+                  </a>
+                <a href="https://www.instagram.com/atingle_com?igsh=NHdocmN0cDh6ZW43">
+                    <i class="social_icon fab fa-instagram"></i>
+                  </a>
             </div>
         </div>
     </div>
     <hr>
-    <p class="copyright">CopyrightⒸ 2024 - All Rights Reserved</p>
+    <p class="copyright">CopyrightⒸ Atingle 2024 - All Rights Reserved</p>
  </footer>
-
   
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
