@@ -74,9 +74,19 @@
             <div class="right">
                 <img src="9a761be.webp">
             </div>
+            <div class="sticky-icon" onclick="openModal()">
+                <h1><span class="auto-type2"></span></h1>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content" >
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <p>Launching...</p><br><br><br><br>
+                  <h2>AI<br>OPITIMIZATION</h2><br><br><br><br>
+                  <h3>Make your resume with AI</h3>
+                </div>
+              </div>
         </div>
     </div>
-    <!-- stickyicon -->
     <div class="centertext">
         <div  data-aos="zoom-in-down"> 
         <h1>
@@ -144,7 +154,25 @@
             typeSpeed:100,
             backSpeed:100,
             loop:true
+        });  
+    </script>
+    <script>
+        var typed = new Typed(".auto-type2", {
+            strings:["Launching","AI","Optimization"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
         })    
+    </script>
+    <script>
+        function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+// Close the modal
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
     </script>
 <footer>
     <div class="rowf">
