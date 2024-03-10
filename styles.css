@@ -437,6 +437,14 @@ html, body {
       .openbtn:hover {
         background-color: #444;
       }
+      .sticky-icon{
+        height: 16vw;
+        width: 16vw;
+        left: 80%;
+      }
+      .modal-content {
+        margin: 60% auto;
+      }
     /* .res{
         display: block;
         height: 100%;
@@ -458,12 +466,10 @@ html, body {
     .firstbox{ 
         width: 20%;
         height: 4%;
-        margin-top: 60%;
+        margin-top: 50%;
         margin-bottom: 6%;
         margin-left: 30%;
         padding-left: 50%;
-
-         
       }
     .secondbox { 
         width: 20%;
