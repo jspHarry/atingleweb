@@ -143,6 +143,7 @@ html, body {
     width: 62%;
     padding: 5vw 7vw;
     line-height: 3vw;
+    z-index: -1111;
     background-color:blanchedalmond;
 }
 .boxlines{
@@ -191,7 +192,8 @@ html, body {
 .right{
     height: 100%;
     width:60%; 
-    background-color:blanchedalmond;  
+    background-color:blanchedalmond;
+    z-index: -1111;  
 }
 .right img {
     position: relative;
@@ -230,6 +232,9 @@ html, body {
 }
 .bttn a:hover {
     transform: scale(1.2);
+}
+.centertext{
+    z-index: -1111;
 }
 .centertext h1{
     font-size: 3vw;

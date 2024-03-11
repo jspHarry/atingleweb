@@ -1,0 +1,219 @@
+/* CHATBOX
+=============== */
+::-webkit-scrollbar {
+    display: none;
+}
+  
+.chatbox {
+    position: fixed;
+    z-index: 99999;
+    bottom: 20px;
+    left: 10px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background:#eee;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+.send__button {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.chatbox__support {
+    background: #f9f9f9;
+    height: 450px;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* HEADER */
+.chatbox__header {
+    background: orange;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox__image--header {
+    margin-right: 10px;
+}
+.chatbox__image--header img{
+    width:5rem
+}
+
+.chatbox__heading--header {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.chatbox__description--header {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Messages */
+.chatbox__messages {
+    font-size: 1.9rem;
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 10px;
+    background: #f5deb3;
+    padding: 8px 12px;
+    max-width: 80%;
+}
+
+.messages__item--visitor,
+.messages__item--typing {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages__item--operator {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--primary);
+    color: black;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: orange;
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.chatbox__send--footer {
+    color: black;
+    font-size: 2.5rem;
+}
+.chatbox__button img{
+    filter: drop-shadow(20px 20px 20px black);
+    width: 7rem;
+}
+.chatbox__button img:hover{
+    width:8rem;
+    transition: all .2s ease;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    z-index: 999999;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.dialog-box {
+    display: none;
+    position: absolute;
+    bottom: 8rem;
+    left:1rem;
+    font-size: 2.5rem;
+    max-width: 70%; /* Limit the width of the chat bubble */
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+
+}
+.dialog-box::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 120px;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #fff transparent;
+}
+
