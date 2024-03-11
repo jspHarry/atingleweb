@@ -32,7 +32,7 @@ footer{
   position: relative;
   top: -5px;
   /* left: 10px; */
-  font-size: 1.1vw;
+  font-size: 1.2vw;
 }
 .col h3{
   width: fit-content;
@@ -132,6 +132,89 @@ footer .copyright{
       left:100%;
   }
 }
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  background-color:blanchedalmond;
+  overflow: hidden;
+  /* position: fixed;
+  transition: 0.3s; */
+}
+.sidepanel{
+  display: none;
+}
+.openbtn{
+  display:  none;
+}
+.img {
+  height: 10vh;
+  width: 10vw;
+  display: flex;
+  padding-left: 2%;
+}
+.img img {  
+  transition: transform 0.3s ease;
+}
+.img img:hover {
+  transform: scale(1.1);
+}
+.child1 {
+  display: flex;
+  gap: 4vw;
+  padding-left: 45%;
+  font-weight: 600;
+  font-size: 1.25vw;
+}
+button {
+  font-size: 1.5vw;
+  padding: 0.8vw 0.5vw;
+  padding-left: 2vw;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.img2 {
+  height: 5vh;
+  width: 5vw;
+  display: flex;
+  padding-left: 8%;
+}
+.img2 img {  
+  transition: transform 0.3s ease;
+}
+.img2 img:hover {
+  transform: scale(1.1);
+}
+
+.child1 a {
+  position: flex;
+  transition: transform 0.3s ease;
+}
+
+.child1 a:hover {
+  transform: scale(1.5);  
+}
+
+.button a {
+  position: relative;  
+  transition: transform 0.3s ease; 
+}
+.button a:hover {
+  transform: scale(1.2);
+}
+.nav i {
+  font-size: 5vw;
+  font-weight: 800;
+  display: none;
+}
 @media (max-width:600px){
   footer{
     width: 100%;
@@ -163,5 +246,68 @@ footer .copyright{
 
 .social_icon {
     margin-right: 10px; /* Optional: Add space between icons */
+}
+.sidepanel {
+  display: block;
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+.sidepanel .button{
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.sidepanel .button button{
+  padding-right:21px;
+  padding-left: 0px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  color:black;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.nav {
+  display: none;
 }
 }

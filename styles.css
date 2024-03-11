@@ -31,12 +31,166 @@ html, body {
 .openbtn{
     display:  none;
 }
+.sticky-icon{
+    background-color: orange;
+    color: #fff;
+    width: 6vw;
+    height: 12vh;
+    border-radius: 50%;
+    position:fixed;
+    display: flex;
+    top: 85%;
+    left: 90%;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    animation: wave 3s infinite linear alternate;
+}
+@keyframes wave {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 51, 102, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 40px 30px rgba(255, 51, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 51, 102, 0.7);
+    }
+}
+
+.sticky-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('your-icon-image-url');
+    background-size: cover;
+}
+.sticky-icon h1{
+    margin-top: 3%;
+    margin-left: 0%;
+    font-size: 1.5rem;
+}
+.sticky-icon{
+    transition: transform 0.3s ease;
+}
+.sticky-icon:hover{
+    transform: scale(1.2);
+}
+
+ 
+.modal {
+    display: none; 
+    position: fixed;  
+    z-index: 9999;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+    background-color: rgba(0,0,0,0.4); 
+}
+ 
+.modal-content {
+    background-color: rgb(255, 236, 202);
+    margin: 2% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);  
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);  
+    }
+}
+.modal-content p {
+    font-size: 4vw;
+    text-align: center;
+    color: orange;
+}
+.modal-content h2 {
+    font-size: 5VW;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: zoomInUp 2s forwards;
+}
+@keyframes zoomInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.modal-content h3{
+    font-size: 2vw;
+    text-align: center;
+    color: orange;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video video {
+    top: 0;
+    margin-left: 50%;
+    margin-top: 7%;
+    margin-bottom: -20% ;
+    width: 20%;
+    height: 20%;
+    transform: translate(-50%, -50%); /* Center the video horizontally and vertically */
+    opacity: 0; 
+    animation: fadeIn 10s forwards;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* Fade in to opacity 1 */
+    }
+}
+/* .res {
+    display: none;
+} */
 .img {
     height: 10vh;
     width: 10vw;
     display: flex;
     padding-left: 2%;
 }
+
 .img img {  
     transition: transform 0.3s ease;
 }
@@ -154,7 +308,7 @@ html, body {
     width: 20%;
     height: 10%;
     margin-bottom: 2%;
-    padding-left: 25%;
+    padding-left: 20%;
   }
 .secondbox { 
     width: 20%;
@@ -315,7 +469,23 @@ html, body {
       .openbtn:hover {
         background-color: #444;
       }
-      
+      .sticky-icon{
+        height: 16vw;
+        width: 16vw;
+        left: 80%;
+      }
+      .modal-content {
+        margin: 60% auto;
+      }
+    /* .res{
+        display: block;
+        height: 100%;
+        width: 0; 
+        position:absolute; 
+        top: -15px;
+        left: 20px;
+        padding-top: 30px;
+    } */
     .nav {
         display: none;
     }
@@ -328,12 +498,10 @@ html, body {
     .firstbox{ 
         width: 20%;
         height: 4%;
-        margin-top: 20%;
+        margin-top: 50%;
         margin-bottom: 6%;
         margin-left: 30%;
         padding-left: 50%;
-
-         
       }
     .secondbox { 
         width: 20%;
