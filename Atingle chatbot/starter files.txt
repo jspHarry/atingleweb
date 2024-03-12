@@ -1,0 +1,8 @@
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install Flask torch torchvision nltk
+python
+import nltk
+nltk.download('punkt')
+quit()
+python train.py
