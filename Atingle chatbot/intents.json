@@ -1,0 +1,125 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Harry",
+        "Whats up",
+        "Yo",
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "issues",
+      "patterns": [
+        "There is  a problem.",
+        "I am facing a issue.",
+        "There is a difficulty.",
+        "I am unable to download resume.",
+        "Not Working"
+      ],
+      "responses": [
+        "Please explain more about your issue at atingle.help@gmail.com",
+        "Contact us at atingle.help@gmail.com in case of difficulty"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Can you help me?",
+        "Assist me in resume making"
+      ],
+      "responses": [
+        "I am always there to help you.",
+        "What can I do for you?"
+      ]
+    },
+    {
+      "tag": "Identity",
+      "patterns": [
+        "Who are you?",
+        "Who created you?",
+        "Why are you made?"
+      ],
+      "responses": [
+        "I am Harry ,a chatbot created by Atingle,I am here to assist you with resume building."
+      ]
+    },
+    {
+      "tag": "resume",
+      "patterns": [
+        "How to create perfect resume?",
+        "How to make good resume?",
+        "What is a nice resume?"
+      ],
+      "responses": [
+        "Tailor your resume to each job application, highlighting relevant skills and experiences.",
+        "Use action verbs and quantify achievements to make your resume impactful and easy to read.",
+        "Optimize your resume layout for ATS compatibility, ensuring it passes through automated screening systems effectively."  
+      ]
+    },
+    {
+      "tag": "shortlisting",
+      "patterns": [
+        "How increase chances of shortlisting?",
+        "How to get selected?",
+        "How to get a job?",
+        "How get desired role in company?"
+      ],
+      "responses": [
+        "Showcase your relevant skills and experiences prominently on your resume and cover letter.",
+        "Network effectively by reaching out to professionals in your desired field and attending industry events.",
+        "Prepare thoroughly for interviews by researching the company and practicing common interview questions."
+      ]
+    },
+    {
+      "tag": "Photo",
+      "patterns": [
+        "Should I include a photo in resume?",
+        "Do we add picture in resume?",
+        "Is adding a profile pic a good decision?"
+      ],
+      "responses": [
+        "It's generally recommended to exclude photos from resumes to focus on professional qualifications.",
+        "Avoid adding a picture to your resume to maintain a standard and professional format.",
+        "Opt against including a profile picture on your resume to ensure hiring decisions are based solely on qualifications."
+      ]
+    },
+    {
+      "tag": "template",
+      "patterns": [
+        "Which templete is best for resume?",
+        "Which template should I use in resume?",
+        "Where can I find good templates?"
+      ],
+      "responses": [
+        "All the templates in Atingle are well crafted keeping in mind the industry standard, you can choose any template as per your requirement."
+      ]
+    }
+  ]
+}
