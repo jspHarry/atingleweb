@@ -15,9 +15,10 @@ if($qry){
         $sender_name = "Atingle";
         $sender_email = "donotreply.atingle@gmail.com";
         $recipient_email = $email;
-
+        $otp = "<b>" . $otp . "</b>";
         $subject = "OTP VERIFICATION CODE";
-        $body = $otp;
+        $body = "To authenticate, please use the following One Time Password (OTP):\n\n" . $otp .
+        "\n\nDon't share this OTP with anyone. Our customer service team will never ask you for password, OTP or any other info.\n\nWe hope to see you again soon";
 
         mail($recipient_email, $subject, $body, "From: $sender_name<$sender_email>");
         
