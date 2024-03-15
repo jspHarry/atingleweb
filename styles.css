@@ -8,7 +8,6 @@ html, body {
     width: 100%;
     
 }
-
 .main {
     height: 100%;
     width: 100%;
@@ -38,6 +37,7 @@ html, body {
     height: 12vh;
     border-radius: 50%;
     position:fixed;
+    z-index: 99999;
     display: flex;
     top: 85%;
     left: 90%;
@@ -236,11 +236,11 @@ html, body {
     transform: scale(1.5);  
 }
 
-.button a {
+.button t {
     position: relative;  
     transition: transform 0.3s ease; 
 }
-.button a:hover {
+.button t:hover {
     transform: scale(1.2);
 }
 .nav i {
