@@ -295,7 +295,7 @@ html, body {
     width: 62%;
     padding: 5vw 7vw;
     line-height: 3vw;
-    z-index: 8888;
+    z-index: 1;
     background-color:blanchedalmond;
 }
 .boxlines{
@@ -416,7 +416,7 @@ html, body {
         position: fixed; 
         z-index: 3;
         top: 0;
-        right: 0;
+        right:0;
         background-color: #111111;
         overflow-x: hidden;
         padding-top: 60px;
