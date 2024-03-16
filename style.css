@@ -2,7 +2,9 @@
 ::-webkit-scrollbar {
     display: none;
 }
-  
+
+
+
 .chatbox {
     position: fixed;
     z-index: 99999;
@@ -20,6 +22,9 @@
     opacity: 0;
     transition: all .5s ease-in-out;
 }
+.hidden {
+    display: none;
+}
 
 .chatbox--active {
     transform: translateY(-40px);
@@ -30,6 +35,7 @@
 
 .chatbox__button {
     text-align: right;
+    width: 300px;
 }
 
 .send__button {
