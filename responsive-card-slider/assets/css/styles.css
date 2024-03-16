@@ -141,7 +141,6 @@ button {
   align-items: center;
   height: 100vh;
   padding-top: 10%;
-   
 }
 
 .card__container {
@@ -332,6 +331,9 @@ button {
 .nav {
     display: none;
 }
+.container{
+  margin-bottom: -125px;
+}
   
 }
  
@@ -344,11 +346,13 @@ button {
   .swiper-button-prev {
     display: block;
   }
+   
   
 }
 
  
 @media screen and (min-width: 1120px) {
+   
   .card__container {
     max-width: 1120px;
   }
