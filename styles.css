@@ -474,9 +474,22 @@ html, body {
         left: 80%;
         top: 90%;
       }
+      .modal-content p{
+        font-size: 4vw;
+      }
+      .modal-content h2{
+        font-size: 7vw;
+      }
       .modal-content {
         margin: 60% auto;
+        width: 80%;
+        height: 35%;
       }
+      .modal-content h3{
+        margin-top: -180px;
+        font-size: 3vw;
+      }
+       
     /* .res{
         display: block;
         height: 100%;

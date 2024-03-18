@@ -34,10 +34,10 @@
                         <img src="./images/man.png" alt="image">
                     </div>
                     <div class="chatbox__content--header">
-                        <!-- <span class="close" onclick="closeboxx()">&times;</span> -->
                         <h4 class="chatbox__heading--header">Chat support</h4>
                         <p class="chatbox__description--header">Hi. My name is Harry. How can I help you?</p>  
                     </div>
+                    <button class="close__button">&times;</button> 
                 </div>
                 <div class="chatbox__messages">
                     <div></div>
@@ -208,21 +208,8 @@ function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
     </script>
-<script>
-function openboxx() {
-    var chatbox = document.getElementsByClassName("chatbox__support")[0];
-    if (chatbox) {
-        chatbox.style.display = "block";
-    }
-}
 
-function closeboxx() {
-    var chatbox = document.getElementsByClassName("chatbox__support")[0];
-    if (chatbox) {
-        chatbox.style.display = "none";
-    }
-}
-</script>
+ 
  
 
  
