@@ -34,7 +34,7 @@ footer{
   /* left: 10px; */
   font-size: 1.2vw;
   display: block;
-  text-align: justify;
+  text-align: left;
 }
 .mobile-hidden {
   display: inline; /* Display the span inline */
@@ -54,6 +54,7 @@ footer{
   cursor: pointer;
   text-decoration: none;
   color: inherit; 
+  text-transform: lowercase;
 }
 
 .footer_email a:hover {

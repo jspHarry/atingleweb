@@ -379,11 +379,11 @@ html, body {
     align-items: center;
     z-index: 1;
 }
-.bttn a {
+.bttn t {
     position: relative;  
     transition: transform 0.3s ease;
 }
-.bttn a:hover {
+.bttn t:hover {
     transform: scale(1.2);
 }
 .centertext{
