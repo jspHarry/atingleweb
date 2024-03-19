@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atingle-Professional Resume Builder</title>
+    <link rel="icon" href="Atingle crop.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.17.0/video.js"></script>
+
+</head>
+<body>
+    <!-- <div id="loader">
+        <video id="loadingVideo" src="km_20240219_2160p_60f_20240219_113815.mp4" autoplay muted loop></video>
+      </div> -->
+
+
+      <div class="containerr">
+        <div class="chatbox">
+            <div class="chatbox__support hidden">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="./images/man.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. My name is Harry. How can I help you?</p>  
+                    </div>
+                    <button class="close__button">&times;</button> 
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="./images/chatbot.png"/></button>
+                <div class="dialog-box " id="dialogBox"></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: white;"></a>
+            <a href="blog.html">Blogs</a>
+            <a href="responsive-card-slider/index.html">Templates</a>
+            <div class="button">
+                <button type="submit">
+                   <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">Sign Up </a>
+                </button>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="img">
+                <img src="Atingle_crop-removebg-preview.png">
+            </div>
+            <div class="child1">
+                <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: black;"></a>
+                <a href="blog.html" style="text-decoration: none; color:black">Blogs</a>
+                <a href="responsive-card-slider/index.html" style="text-decoration: none; color:black">Templates</a>
+            </div>
+            <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">
+                <div class="button">
+                    <button type="submit">
+                        <t>Sign Up</t>
+                        <div class="img2">
+                            <img src="add-friend.png">
+                        </div>
+                        <div id="accountInfo" style="display: none;">
+                    </button>
+                </div>
+            </a>
+            
+        </div>
+        <div class="content">
+            <div class="left">
+                <div id="animated-example" class="animated fadeInLeft">
+                    <div class="boxlines">
+                        <div class="firstbox"></div>
+                        <div class="secondbox"></div>
+                    </div>
+                    <h1>ATINGLE</h1>
+                    <h2> <span class="auto-type"></span> </h2>
+                    <a href="http://localhost:3000/register.php" style="text-decoration: none; color: white;">
+                        <div class="divy" style="cursor: pointer;">
+                            <button type="submit" class="bttn">
+                                <t>Build Your Resume</t>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+        </div>
+            <div class="right">
+                <img src="9a761be.webp">
+            </div>
+            <div class="sticky-icon" onclick="openModal()">
+                <h1><span class="auto-type2"></span></h1>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content" >
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <p>Launching...</p><br><br><br><br>
+                  <h2>AI<br>OPITIMIZATION</h2><br><br><br><br>
+                  <div class="video">
+                  <video src="km_20240311_2160p_60f_20240311_193245.mp4" autoplay muted loop>
+                  </video>
+                </div>
+                  <h3>Make your resume with AI</h3>
+                </div>
+                </div>
+            </div>
+    </div>
+    <div class="centertext">
+        <div  data-aos="zoom-in-down"> 
+        <h1>
+            Build Your Resume Fast And Easy.
+        </h1>
+        <p>At Atingle, speed is our motto. You won't find any software to download or encounter a multi-part sign-up form. Say goodbye to 
+            lengthy tutorials; our process is straightforward and efficient, ensuring a seamless experience.</p>
+    </div>
+</div>
+    
+    <section class="section" id="abhi">
+        <div class="container">
+            <div class="row row1"  data-aos="fade-up">
+                <div class="img-box"><img src="ressume.png" alt="abhi"></div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black lt-space"> Versatile Templates</h2>
+                    <p class="text-gray">Ensure your job search gets off to a strong start by selecting 
+                        from our range of meticulously crafted resume templates, meticulously designed to be both 
+                        applicant tracking system-friendly and visually striking.</p>
+                        <!-- <a href="#" style="text-decoration: none; color: red;" class="btn btn-secondary">more</a> -->
+                </div>
+            </div>
+        <div class="fade">
+            <div class="row row2"  data-aos="fade-up">
+                <div class="img-box "><img src="2-removebg-preview.png" alt="pankaj"></div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black lt-space">Flexible Layout</h2>
+                    <p class="text-gray">
+                        Tailor your resume template to authentically represent your professional journey by adjusting the layout according to 
+                        your level of experience. Ensure your resume reflects your unique career trajectory by customizing the design to suit 
+                        your individual background and accomplishments.</p>
+                    <!-- <a href="#" style="text-decoration: none; color: red;" class="btn btn-secondary">more</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="fade">
+            <div class="row row3"  data-aos="fade-up">
+                <div class="img-box"><img src="3-removebg-preview.png" alt=" ashish"></div> 
+                <div class="text-box">
+                    <h2 class="lg-heading text-black lt-space">Fill in the Blanks</h2>
+                    <p class="text-gray">Enter your resume details and experience, and witness the power of our AI content analyzer as it 
+                        dynamically updates your resume in real-time. With each input, observe how the layout, content, and presentation adapt 
+                        to best showcase your skills, qualifications, and achievements.</p>
+                    <!-- <a href="#" style="text-decoration: none; color: red;" class="btn btn-secondary">more</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="fade">
+            <div class="row row4"  data-aos="fade-up">
+                <div class="img-box"><img src="41-removebg-preview.png" alt=" shivam"></div>
+                <div class="text-box">
+                    <h2 class="lg-heading text-black lt-space">Now "HIT" download</h2>
+                    <p class="text-gray">Absolutely free! There are no hidden fees or paywalls once you've finished creating your resume with 
+                        the Basic Account. If you choose to utilize any of our premium features, the software will notify you accordingly..</p>
+                    <!-- <a href="#" style="text-decoration: none; color: red;" class="btn btn-secondary">more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings:["Professional Resume Builder","Crafting Success Stories","Fuel Your Career Aspirations","Where Resumes Spark Careers"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        });  
+    </script>
+    <script>
+        var typed = new Typed(".auto-type2", {
+            strings:["Launching","AI","Optimization"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })    
+    </script>
+    <script>
+        function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+    </script>
+
+ 
+ 
+
+ 
+
+<footer>
+    <div class="rowf">
+        <div class="col">
+            <img src="Atingle_crop-removebg-preview.png" class="footer_logo">
+            <t class="footer_about"><br>
+                At Atingle, resumes are transformed into career catalysts, launching professionals towards success. 
+                <span class="mobile-hidden">Craft your narrative with our innovative tools and expert guidance, paving the way for a thriving career journey.</span>
+            </t>
+        </div>
+        <div class="col">
+            <h3>Office <div class="bottom_line"><span></span></div></h3>
+            <p>Chitkara University</p>
+            <p>Chandigarh</p>
+            <p>India</p>
+            <p class="footer_email"><a href="mailto:atingle.help@gmail.com">atingle.help@gmail.com</a></p>
+            <h4>+91-6284700733</h4>
+        </div>
+        <div class="col-links">
+        <div class="col">
+            <h3>Links <div class="bottom_line"><span></span></div></h3>
+            <ul>
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\updated\homepage.html">HOME</a></li>
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\updated\blog.html">BLOGS</a></li>
+                <li><a href="C:\Users\Dell\OneDrive\Desktop\updated\responsive-card-slider\index.html">TEMPLATES</a></li>
+            </ul>
+        </div>
+    </div> 
+        <div class="col">
+            <div class="social_icons">
+                <a href="mailto:atingle.help@gmail.com">
+                    <i class="social_icon fas fa-envelope"></i>
+                </a> 
+                <a href="https://github.com/jspHarry/atingle">
+                    <i class="social_icon fab fa-github"></i>
+                  </a>
+                <a href="https://www.instagram.com/atingle_com?igsh=NHdocmN0cDh6ZW43">
+                    <i class="social_icon fab fa-instagram"></i>
+                  </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">CopyrightⒸ Atingle 2024 - All Rights Reserved</p>
+ </footer>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./app.js"></script>
+  <script>
+    var $SCRIPT_ROOT = "{{request.script_root|tojson}}";
+  </script>
+  <script>
+    const chatButton = document.querySelector('.chatbox__button button');
+    const chatSupport = document.querySelector('.chatbox__support');
+
+chatButton.addEventListener('click', () => {
+    chatSupport.classList.toggle('hidden');
+});
+
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+ 
