@@ -1,6 +1,6 @@
 *{
-    margin:0%;
-    padding:0%;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 html, body {
@@ -8,7 +8,6 @@ html, body {
     width: 100%;
     
 }
-
 .main {
     height: 100%;
     width: 100%;
@@ -38,6 +37,7 @@ html, body {
     height: 12vh;
     border-radius: 50%;
     position:fixed;
+    z-index: 99999;
     display: flex;
     top: 85%;
     left: 90%;
@@ -236,11 +236,11 @@ html, body {
     transform: scale(1.5);  
 }
 
-.button a {
+.button t {
     position: relative;  
     transition: transform 0.3s ease; 
 }
-.button a:hover {
+.button t:hover {
     transform: scale(1.2);
 }
 .nav i {
@@ -295,7 +295,7 @@ html, body {
     width: 62%;
     padding: 5vw 7vw;
     line-height: 3vw;
-    z-index: 8888;
+    z-index: 1;
     background-color:blanchedalmond;
 }
 .boxlines{
@@ -379,11 +379,11 @@ html, body {
     align-items: center;
     z-index: 1;
 }
-.bttn a {
+.bttn t {
     position: relative;  
     transition: transform 0.3s ease;
 }
-.bttn a:hover {
+.bttn t:hover {
     transform: scale(1.2);
 }
 .centertext{
@@ -416,7 +416,7 @@ html, body {
         position: fixed; 
         z-index: 3;
         top: 0;
-        right: 0;
+        right:0;
         background-color: #111111;
         overflow-x: hidden;
         padding-top: 60px;
@@ -474,9 +474,22 @@ html, body {
         left: 80%;
         top: 90%;
       }
+      .modal-content p{
+        font-size: 4vw;
+      }
+      .modal-content h2{
+        font-size: 7vw;
+      }
       .modal-content {
         margin: 60% auto;
+        width: 80%;
+        height: 35%;
       }
+      .modal-content h3{
+        margin-top: -180px;
+        font-size: 3vw;
+      }
+       
     /* .res{
         display: block;
         height: 100%;

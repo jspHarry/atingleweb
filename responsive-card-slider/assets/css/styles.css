@@ -1,28 +1,26 @@
-/*=============== GOOGLE FONTS ===============*/
+ 
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+ 
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(38, 92%, 58%);
-  --first-color-light: hsl(38, 100%, 78%);
+ 
+  --first-color: #fe7941;
+  --first-color-light: #fe7941;
   --first-color-alt: hsl(32, 75%, 50%);
   --second-color: hsl(195, 75%, 52%);
   --dark-color: hsl(212, 40%, 12%);
   --white-color: hsl(212, 4%, 95%);
-  /* --body-color: hsl(212, 42%, 15%); */
-  --body-color: blanchedalmond;
+  
+  --body-color: black;
   --container-color: hsl(212, 42%, 20%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+ 
   --body-font: "Bai Jamjuree", sans-serif;
   --h2-font-size: 1.25rem;
   --normal-font-size: 1rem;
 }
 
-/*=============== BASE ===============*/
+ 
 * {
   box-sizing: border-box;
   padding: 0;
@@ -48,73 +46,65 @@ img {
 }
 .temp{
   text-align: center;
-  color: #e19c30;
-  font-size: 21px;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration:underline;
+  color: #FE7941;
+  font-size: 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
 }
 .nav {
   height: 100px;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5vw;
-  background-color:blanchedalmond;
   overflow: hidden;
-  /* position: fixed;
-  transition: 0.3s; */
+  /* position: fixed; */
+  background-color: black;
 }
-.sidepanel{
-  display: none;
+.logo img {
+  width: 150px;
+  height: 150px;
+  margin-left: 70px;
 }
-.openbtn{
-  display:  none;
+.logo img {
+  position: relative;  
+  transition: transform 0.3s ease; 
 }
-.imgc {
-  height: 10vh;
-  width: 10vw;
-  display: flex;
-  padding-left: 2%;
-}
-.imgc img {  
-  transition: transform 0.3s ease;
-}
-.imgc img:hover {
-  transform: scale(1.1);
-}
-.child1 {
-  display: flex;
-  gap: 4vw;
-  padding-left: 45%;
-  font-weight: 600;
-  font-size: 1.25vw;
+.logo img:hover {
+  transform: scale(1.2);
 }
 button {
-  font-size: 1.5vw;
-  padding: 0.8vw 0.5vw;
+  float: right;
+  margin-right: 70px;
+  margin-top: -45px;
+  margin-left: -10px;
+  font-size: 1.7vw;
+  padding: 0.4vw 2vw;
   padding-left: 2vw;
-  background-color: orange;
-  color: #fff;
+  background-color:#BF99FC;
+  color: black;
   border: none;
   border-radius: 30px;
   font-weight: 700;
   display: flex;
   align-items: center;
 }
-.img2 {
-  height: 5vh;
-  width: 5vw;
-  display: flex;
-  padding-left: 8%;
+
+.nav button {
+  position: relative;  
+  transition: transform 0.3s ease; 
 }
-.img2 img {  
-  transition: transform 0.3s ease;
-}
-.img2 img:hover {
+.nav button:hover {
   transform: scale(1.1);
 }
 
+.child1 {
+  margin-top: -110px;
+  display: flex;
+  gap: 4vw;
+  padding-left: 55%;
+  font-weight: 600;
+  font-size: 1.25vw;
+}
 .child1 a {
   position: flex;
   transition: transform 0.3s ease;
@@ -123,30 +113,117 @@ button {
 .child1 a:hover {
   transform: scale(1.5);  
 }
-
-.button a {
-  position: relative;  
-  transition: transform 0.3s ease; 
-}
-.button a:hover {
-  transform: scale(1.2);
-}
-.nav i {
-  font-size: 5vw;
-  font-weight: 800;
+.sidepanel{
   display: none;
 }
-/*=============== CARD ===============*/
+.openbtn{
+  display:  none;
+}
+.logi {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .logi{
+      display: block;
+      }
+  .logi img {
+      width: 120px;
+      height: 120px;
+      margin-top: 5px;
+  }
+  .sidepanel {
+      display: block;
+      height: 100%;
+      width: 0; 
+      position: fixed; 
+      z-index: 3;
+      top: 0;
+      right:0;
+      background-color:black;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.3s;
+    }
+    .sidepanel .button{
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+    .sidepanel .button button{
+      padding-right:21px;
+      padding-left: 0px;
+    }
+    
+    .sidepanel a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidepanel a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidepanel .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    .openbtn {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      font-size: 35px;
+      cursor: pointer;
+      background-color: transparent;
+      color:white;
+      border: none;
+      margin-top: 30px;
+      margin-right: 25px;
+    }
+    
+    .openbtn:hover {
+      background-color: white;
+    }
+    .nav {
+      display: none;
+  }
+  button{
+      margin-top: 10px;
+  }
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding-top: 10%;
+  background-color: black;
 }
 
 .card__container {
   padding-block: 5rem;
-   margin-top: -100px;
+  margin-top: -100px;
+  filter: drop-shadow(0px 0px 5px #bf99fc);
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 10px #bf99fc);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 15px #bf99fc);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px #bf99fc);
+    }
 }
 
 .card__content {
@@ -156,7 +233,7 @@ button {
 }
 
 .card__article {
-  width: 300px; /* Remove after adding swiper js */
+  width: 300px;  
   border-radius: 1.25rem;
   overflow: hidden;
 }
@@ -227,7 +304,6 @@ button {
   font-weight: 600;
 }
 
-/* Swiper class */
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";
@@ -259,8 +335,7 @@ button {
   background-color: var(--second-color);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+ 
 @media screen and (max-width: 320px) {
   .card__data {
     padding: 1rem;
@@ -279,7 +354,7 @@ button {
     z-index: 3;
     top: 0;
     right: 0;
-    background-color: #111111;
+    background-color: black;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.3s;
@@ -322,7 +397,7 @@ button {
     font-size: 30px;
     cursor: pointer;
     background-color: transparent;
-    color:black;
+    color:white;
     padding: 10px 15px;
     border: none;
   }
@@ -334,9 +409,12 @@ button {
 .nav {
     display: none;
 }
+.container{
+  margin-bottom: -125px;
+}
   
 }
-/* For medium devices */
+ 
 @media screen and (min-width: 768px) {
   .card__content {
     margin-inline: 3rem;
@@ -346,11 +424,13 @@ button {
   .swiper-button-prev {
     display: block;
   }
+   
   
 }
 
-/* For large devices */
+ 
 @media screen and (min-width: 1120px) {
+   
   .card__container {
     max-width: 1120px;
   }
@@ -360,5 +440,119 @@ button {
   }
   .swiper-button-next {
     right: -1rem;
+  }
+}
+
+
+.foot {
+  width: 93vw;
+  height: 63vh;
+  background-color: #FE7941;
+  margin-top: 80px;
+  margin-left: 43px;
+  border-radius: 40px;
+}
+.foot h1 {
+  margin-left: 80px;
+  padding-top: 70px;
+  margin-right: 20px;
+  color: black;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:500;
+  font-size: 5.6rem;
+}
+.foot h6{
+  margin-left: 90px;
+  margin-top: 20px;
+  font-size: 1.5vw;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+.foot a button {
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  float: left;
+  margin-left: 80px;
+  margin-top: 30px;
+  padding: 15px 30px;
+}
+.foot a button {
+  position: relative;  
+  transition: transform 0.3s ease;
+}
+.foot a button:hover {
+  transform: scale(1.1);
+}
+.foot img {
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin-right: 100px;
+  margin-top: -320px;
+  border-radius: 50%;
+}
+.foot img {
+  position: relative;  
+  transition: transform 0.3s ease;
+}
+.foot img:hover {
+  transform: scale(1.1);
+}
+.foot .child1 a {
+  position: relative;
+  margin-top: 79px;
+  margin-left: -850px;
+  margin-right: 500px;
+}
+.foot h3{
+  color: black;
+  font-size: 1.2vw;
+  z-index: 2;
+  margin-left: 1100px;
+  margin-top: 150px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.blackout {
+  width: 93vw;
+  height: 5vh;
+  background-color: black;
+}
+@media (max-width:600px){
+  .foot {
+      width: 95vw;
+      height: 30vh;
+      margin-left: 10px;
+  }
+  .foot h1 {
+      margin-left: 30px;
+      padding-top: 30px;
+      font-size: 9vw;
+      text-align: center;
+      font-weight: 600;
+  }
+  .foot h6 {
+      font-size: 4vw;
+      margin-left: 50px;
+      margin-right: 30px;
+  }
+  .foot a button {
+      margin-left: 40px;
+  }
+  .foot h3{
+      font-size: 4vw;
+      margin-left: 90px;
+      margin-top: 100px;
+  }
+  .foot img {
+      width: 80px;
+      height: 80px;
+      margin-top: -120px;
+      margin-right: 40px;
+  }
+  .blackout{
+      width: 93vw;
+      height: 7vh;
   }
 }

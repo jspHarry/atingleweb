@@ -264,6 +264,7 @@
 }
 
 .swiper-pagination {
+    top: 110%;
     position: absolute;
     text-align: center;
     transition: .3s opacity;
@@ -334,7 +335,7 @@ button.swiper-pagination-bullet {
     padding: 0;
     box-shadow: none;
     -webkit-appearance: none;
-    appearance: none
+    appearance: none;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
@@ -342,7 +343,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet:only-child {
-    display: none !important
+    display: none;
 }
 
 .swiper-pagination-bullet-active {

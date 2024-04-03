@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blog.css">
     <link rel="icon" href="Atingle crop.png">
-    <link rel="stylesheet" href="wave.css">
+    <!-- <link rel="stylesheet" href="wave.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -13,51 +13,46 @@
      
 </head>
 <body>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: white;"></a>
-        <!-- <a href="blog.html">Blogs</a> -->
+        <a href="newpage.html" class="social_icon fas fa-home" style="text-decoration: none; color: white;"></a>
         <a href="responsive-card-slider/index.html">Templates</a>
         <div class="button">
             <button type="submit">
                <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">Sign Up</a>
             </button>
-           </div>
-      </div>
+        </div>
+    </div>
 
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
-      <div class="nav">
-        <div class="img">
-            <img src="Atingle_crop-removebg-preview.png">
+    <div class="nav">
+        <div class="logo">
+            <img src="aTINGLE__1___1_-removebg-preview.png">
         </div>
         <div class="child1">
-            <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: black;"></a>
-            <!-- <a href="blog.html" style="text-decoration: none; color:black">Blogs</a> -->
-            <a href="responsive-card-slider/index.html" style="text-decoration: none; color:black">Templates</a>
+            <a href="newpage.html" class="social_icon fas fa-home" style="text-decoration: none; color: white;"></a>
+            <!-- <a href="blog.html" style="text-decoration: none; color:white">Blogs</a> -->
+            <a href="#" style="text-decoration: none; color:white">Jobs</a>
+            <a href="responsive-card-slider/index.html" style="text-decoration: none; color:white">Templates</a>
         </div>
-        <div class="button">
-         <button type="submit">
-            <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">Sign Up</a>
-            <div class="img2">
-             <img src="add-friend.png">
+        <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">
+            <div class="button">
+                <button type="submit">
+                    <t>Sign Up</t>
+                        <img src="add-friend.png" width="50px">
+                    <div id="accountInfo" style="display: none;">
+                </button>
             </div>
-            <div id="accountInfo" style="display: none;">
-         </button>
-        </div>
+        </a>
     </div>
  <div class="container">
     <div class="row">
         <div data-aos="zoom-in">
-        <div class="header">
-            <h1>Atingle-Blogs</h1>
-            <p>These articles helps you to improve your resume and helps to get a better job 
-</p>
-<!-- <div class="title_section">
-    <h2><b>Recent</b>
-    Post</h2>
-</div> -->
+         <div class="header">
+            <h1>Atingle Blogs</h1>
+            <p>These articles helps you to improve your resume and helps to get a better job</p>
+         </div>
         </div>
-    </div>
         <div data-aos="flip-down">
         <div class="content">
              
@@ -66,7 +61,7 @@
                 <img src="https://collegeinfogeek.com/wp-content/uploads/2018/02/how-to-write-a-resume.jpg" height="300px" alt="Resume Examples">
             
                 <h4>How To Make a Resume (With Examples)</h4>
-                <p> A resume is a document commonly used in the hiring process. It includes information about your background and qualifications and should communicate the most important </a><a href="https://in.indeed.com/career-advice/resumes-cover-letters/how-to-make-a-resume-with-examples"> <b>Read More...</b></a></p>
+                <p> A resume is a document commonly used in the hiring process. It includes information about your background and qualifications</a><a href="https://in.indeed.com/career-advice/resumes-cover-letters/how-to-make-a-resume-with-examples"> <b>Read More...</b></a></p>
             </div>
          
             <div class="card">
@@ -82,7 +77,7 @@
                 <img src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2020/06/28185942/Resume-Screening-A-How-To-Guide-for-Recruiters-in-2023.jpg" height="300px">
             
                 <h4>10 Ways To Pass Automated Screening For Resumes (With Tips) </h4>
-                <p>Many companies now use advanced automation software to review resumes and reduce work for their recruiting staff. Fortunately, there are several easy ways </a> <a href="https://in.indeed.com/career-advice/resumes-cover-letters/automated-screening-for-resumes"> <b>Read More...</b></a></p>
+                <p>Many companies now use advanced automation software to review resumes and reduce work for their recruiting staff. Fortunately, </a> <a href="https://in.indeed.com/career-advice/resumes-cover-letters/automated-screening-for-resumes"> <b>Read More...</b></a></p>
             </div>
          
             <div class="card">
@@ -98,7 +93,7 @@
                 <img src="https://media.licdn.com/dms/image/D5612AQEkdm8Nz9vBeA/article-cover_image-shrink_600_2000/0/1704204767377?e=2147483647&v=beta&t=sms1M8hZCvJHGMn7efxm45WJevaUmN-FoVqMGU3SvdM" height="330px" width="300px">
             
                 <h4>How to Use ChatGPT to Write A Resume</h4>
-                <p>Are you ready to take your resume game to the next level? Look no further than ChatGPT, the AI language model that's quickly rising to the top. People are turning to this powerful tool for everything from writing cover letter to </a> <a href="https://www.linkedin.com/pulse/how-use-chatgpt-write-resume-nikita-gupta/"> <b>Read More...</b></a></p>
+                <p>Are you ready to take your resume game to the next level? Look no further than ChatGPT, the AI language model that's quickly rising to the top. People are turning to this powerful tool for everything from writing </a> <a href="https://www.linkedin.com/pulse/how-use-chatgpt-write-resume-nikita-gupta/"> <b>Read More...</b></a></p>
             </div>
             <div class="card">
                 <a href="https://www.indeed.com/career-advice/resumes-cover-letters/15-resume-mistakes-to-avoid">
@@ -106,7 +101,7 @@
             
                 <h4>16 Resume Mistakes and How To Avoid Them (With Helpful Tips)
                 </h4>
-                <p>When applying for jobs, your resume summarizes your work history, education and skills to show employers why you're a good fit for a new position. There re some guidelines you can follow to write an effective resume to create a positive impression on hiring managers </a><a href="https://www.indeed.com/career-advice/resumes-cover-letters/15-resume-mistakes-to-avoid"> <b>Read More...</b></a></p>
+                <p>When applying for jobs, your resume summarizes your work history, education and skills to show employers why you're a good fit for a new position. There re some guidelines you can follow to write an effective </a><a href="https://www.indeed.com/career-advice/resumes-cover-letters/15-resume-mistakes-to-avoid"> <b>Read More...</b></a></p>
             </div>
         </div>
     </div>
@@ -132,12 +127,32 @@
   </footer> -->
 </div>
 
-<footer>
+<div class="foot" data-aos="fade-in">
+    <h1>Get Started Now !</h1>
+    <h6>Boost Your Job Search with AI-Optimization-Try Atingle today!</h6>
+    <a href="http://localhost:3000/register.php" style="text-decoration: none; color: white;">
+        <button type="submit" class="bttn">
+            <t>Get Started Now 🡥</t>
+        </button>
+</a>
+<h3>Atingle 2024. All Rights Reserved</h3>
+<img src="aTINGLE (1) (1).jpg">
+<div class="child1">
+    <a href="responsive-card-slider/index.html" style="text-decoration: none; color:black">Templates</a>
+    <a href="#" style="text-decoration: none; color:black">Jobs</a>
+    <!-- <a href="responsive-card-slider/index.html" style="text-decoration: none; color:black">Blogs</a> -->
+</div>
+</div>
+<div class="blackout"></div>
+
+<!-- <footer>
+    <br><br><br><br><br><br>
     <div class="rowf">
         <div class="col">
             <img src="Atingle_crop-removebg-preview.png" class="footer_logo">
             <t class="footer_about"><br>
-                At Atingle, resumes are transformed into career catalysts, launching professionals towards success. Craft your narrative with our innovative tools and expert guidance, paving the way for a thriving career journey.
+                At Atingle, resumes are transformed into career catalysts, launching professionals towards success. 
+                <span class="mobile-hidden">Craft your narrative with our innovative tools and expert guidance, paving the way for a thriving career journey.</span>
             </t>
         </div>
         <div class="col">
@@ -145,8 +160,8 @@
             <p>Chitkara University</p>
             <p>Chandigarh</p>
             <p>India</p>
-            <p class="footer_email">atingle.help@gmail.com</p>
-            <h4>+91-1234567890</h4>
+            <p class="footer_email"><a href="mailto:atingle.help@gmail.com">atingle.help@gmail.com</a></p>
+            <h4>+91-6284700733</h4>
         </div>
         <div class="col-links">
         <div class="col">
@@ -174,7 +189,7 @@
     </div>
     <hr>
     <p class="copyright">CopyrightⒸ Atingle 2024 - All Rights Reserved</p>
- </footer>
+ </footer> -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

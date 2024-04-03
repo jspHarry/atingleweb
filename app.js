@@ -3,7 +3,8 @@ class Chatbox {
         this.args = {
             openButton: document.querySelector('.chatbox__button'),
             chatBox: document.querySelector('.chatbox__support'),
-            sendButton: document.querySelector('.send__button')
+            sendButton: document.querySelector('.send__button'),
+            closeButton: document.querySelector('.close__button')
         }
 
         this.state = false;
@@ -11,9 +12,10 @@ class Chatbox {
     }
 
     display() {
-        const {openButton, chatBox, sendButton} = this.args;
-
-        openButton.addEventListener('click', () => this.toggleState(chatBox))
+        const {openButton, chatBox, sendButton,closeButton} = this.args;
+        openButton.addEventListener('click', () => this.openChatbox(chatBox));
+        closeButton.addEventListener('click', () => this.closeChatbox(chatBox));
+        // openButton.addEventListener('click', () => this.toggleState(chatBox));
 
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
 
@@ -25,16 +27,25 @@ class Chatbox {
         })
     }
 
-    toggleState(chatbox) {
-        this.state = !this.state;
-
-        // show or hides the box
-        if(this.state) {
-            chatbox.classList.add('chatbox--active')
-        } else {
-            chatbox.classList.remove('chatbox--active')
-        }
+    openChatbox(chatbox) {
+        this.state = true;
+        chatbox.classList.add('chatbox--active');
     }
+    
+    closeChatbox(chatbox) {
+        this.state = false;
+        chatbox.classList.remove('chatbox--active');
+    }    
+
+    // toggleState(chatbox) {
+    //     this.state = !this.state;
+
+    //     if(this.state) {
+    //         chatbox.classList.add('chatbox--active')
+    //     } else {
+    //         chatbox.classList.remove('chatbox--active')
+    //     }
+    // }
 
     onSendButton(chatbox) {
         var textField = chatbox.querySelector('input');

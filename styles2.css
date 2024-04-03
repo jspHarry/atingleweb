@@ -4,7 +4,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-/* #################### html styling elements ############### */
 :root{
     font-size: 62.5%;
 }
@@ -17,8 +16,6 @@ p, li{
     margin-bottom: 0.5em;
     letter-spacing: 0.07;
 }
- 
-/* ############### utility classes ########## */
 .container{
     max-width: 1000px;
     width: 90%;
@@ -88,7 +85,6 @@ p, li{
 .bg-dark{
     background-color: #263238;
 }
-/* ################### header styling#################### */
  
 header{
     height: 97vh;
@@ -116,7 +112,6 @@ header{
     clear: both;
     display: block;
 }
-/* ################### header content styling ################ */
 
 .navbar .nav-item{
     display: inline-block;
@@ -153,8 +148,6 @@ header{
     text-transform: uppercase;
     text-align: center;
 }
-
-/* ##################### section styling ############### */
 .section{
     background: white;
     padding: 10rem 0;
@@ -255,8 +248,6 @@ header{
     clear: both;
 }
 
-/* ############################### feature container styling #################################### */
-
 .features{
     padding: 10rem 0;
 }
@@ -298,8 +289,6 @@ header{
     background-color: #263238;
 }
 
-/* ########################## footer styling #####################3 */
-
 .footer{
     background-color: #263238;
     color:#f4f4f4;
@@ -310,8 +299,6 @@ header{
 .social-media-links i{
     margin: 2rem;
 }
-
-/* ######################## about page styling ####################### */
 
 .about{
     padding: 5rem;
@@ -364,8 +351,6 @@ header{
      width: 240px;
  }
 
- /* ######################### count styling ######################### */
-
 
  .count-box{
      margin-top: 1.5rem;
@@ -404,7 +389,6 @@ header{
     display: block;
     clear: both;
 }
- /* ########################### bannner styling ########################## */
 
  .banner-style{
     background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
@@ -452,7 +436,6 @@ header{
     display: block;
     clear: both;
  }
- /* #################### contact styling ############################### */
  .contact-form{
      padding: 5rem 0;
      font-size: 2rem;
@@ -500,8 +483,6 @@ header{
     object-position:right;
  }
 
- /* ################# form styling ###################### */
-
  .form h1::after{
      content: '';
      display: block;
@@ -543,17 +524,15 @@ header{
      letter-spacing: 0.25em;
  }
 
- /* ########################## media query ######################### */
-
  @media (max-width:350px){
-    :root{
+    /* :root{
         font-size:45%;
         margin: 1rem;
     }
 
     p{
         font-size: 0.8rem;
-    }
+    } */
 
 
 .navbar .nav-items , .navbar .logo{
