@@ -120,7 +120,7 @@ def insert_data(name, email, res_score, timestamp, no_of_pages, reco_field, cand
 
 st.set_page_config(
     page_title="Atingle Resume Analyzer",
-    page_icon='./Logo/SRA_Logo.ico',
+    page_icon='./Logo/favicon.png',
 )
 
 
@@ -129,7 +129,7 @@ def run():
     st.sidebar.markdown("# Choose User")
     activities = ["Normal User", "Admin"]
     choice = st.sidebar.selectbox("Choose among the given options:", activities)
-    # img = Image.open('./Logo/SRA_Logo.jpg')
+    # img = Image.open('./Logo/atinglelogo.png')
     # img = img.resize((250, 250))
     # st.image(img)
 
