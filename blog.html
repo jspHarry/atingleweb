@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blog.css">
     <link rel="icon" href="Atingle crop.png">
-    <link rel="stylesheet" href="wave.css">
+    <!-- <link rel="stylesheet" href="wave.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -17,6 +17,7 @@
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: white;"></a>
+        <!-- <a href="blog.html">Blogs</a> -->
         <a href="responsive-card-slider/index.html">Templates</a>
         <div class="button">
             <button type="submit">
@@ -25,35 +26,39 @@
         </div>
     </div>
 
-       <div class="nav">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <div class="nav">
         <div class="img">
             <img src="Atingle_crop-removebg-preview.png">
         </div>
         <div class="child1">
             <a href="homepage.html" class="social_icon fas fa-home" style="text-decoration: none; color: black;"></a>
-
+            <!-- <a href="blog.html" style="text-decoration: none; color:black">Blogs</a> -->
             <a href="responsive-card-slider/index.html" style="text-decoration: none; color:black">Templates</a>
         </div>
-        <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">
-            <div class="button">
-                <button type="submit">
-                    <t>Sign Up</t>
-                    <div class="img2">
-                        <img src="add-friend.png">
-                    </div>
-                    <div id="accountInfo" style="display: none;">
-                </button>
+        <div class="button">
+         <button type="submit">
+            <a href="http://localhost:3000/register.php" style="text-decoration: none; color:white">Sign Up</a>
+            <div class="img2">
+             <img src="add-friend.png">
             </div>
-        </a>
+            <div id="accountInfo" style="display: none;">
+         </button>
+        </div>
     </div>
  <div class="container">
     <div class="row">
         <div data-aos="zoom-in">
-         <div class="header">
+        <div class="header">
             <h1>Atingle-Blogs</h1>
-            <p>These articles helps you to improve your resume and helps to get a better job</p>
-         </div>
+            <p>These articles helps you to improve your resume and helps to get a better job 
+</p>
+<!-- <div class="title_section">
+    <h2><b>Recent</b>
+    Post</h2>
+</div> -->
         </div>
+    </div>
         <div data-aos="flip-down">
         <div class="content">
              
@@ -129,7 +134,6 @@
 </div>
 
 <footer>
-    <br><br><br><br><br><br>
     <div class="rowf">
         <div class="col">
             <img src="Atingle_crop-removebg-preview.png" class="footer_logo">
@@ -144,7 +148,7 @@
             <p>Chandigarh</p>
             <p>India</p>
             <p class="footer_email"><a href="mailto:atingle.help@gmail.com">atingle.help@gmail.com</a></p>
-            <h4>+91-1234567890</h4>
+            <h4>+91-6284700733</h4>
         </div>
         <div class="col-links">
         <div class="col">
@@ -172,7 +176,7 @@
     </div>
     <hr>
     <p class="copyright">CopyrightⒸ Atingle 2024 - All Rights Reserved</p>
- </footer>
+ </footer> 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

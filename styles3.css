@@ -34,10 +34,10 @@ footer{
   /* left: 10px; */
   font-size: 1.2vw;
   display: block;
-  text-align: justify;
+  text-align:left;
 }
 .mobile-hidden {
-  display: inline; /* Display the span inline */
+  display: inline; 
 }
 .col h3{
   width: fit-content;

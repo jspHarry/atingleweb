@@ -14,11 +14,6 @@
     padding:0%;
     box-sizing: border-box;
 }
-html,body{
-    height:100%;
-    width:100%;
-
-}
 .title_section h2{
     background: #fff;
     display: inline-block;
@@ -33,7 +28,7 @@ html,body{
 
 .container{
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: black;
 }
 .container .row{
     width: 80%;
@@ -46,14 +41,17 @@ html,body{
 }
 .container .row .header h1{
     padding-top: 30px;
-    font-size: 45px;
-    color: #e19c30;
+    font-size: 4rem;
+    color:#FE7941;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container .row .header p{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 1.5;
-    color: #6e6e6e;
+    color: white;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .content{
     display: grid;
@@ -70,7 +68,19 @@ html,body{
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
     margin: auto;
-    filter: drop-shadow(15px 15px 15px black);
+    filter: drop-shadow(0px 0px 20px #bf99fc);
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0px 0px 20px #bf99fc);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 30px #bf99fc);
+    }
+    100% {
+        filter: drop-shadow(0px 0px 20px #bf99fc);
+    }
 }
 
 .card {
@@ -91,7 +101,7 @@ html,body{
 .content .card{
     flex: 1;
     margin: 50px 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 15px 10px rgba(0,0,0,0.1);
     background-color: #fff;
 }
 .content .card img{
@@ -102,6 +112,7 @@ html,body{
     margin-top: 10px;
     margin-left: 10px;
     font-size: 18px;
+    font-weight: 900;
 }
 .content .card p{
     font-size: 15px;
@@ -126,6 +137,118 @@ html,body{
     }
     .container .row .header p{
         font-size: 11px;
+    }
+}
+
+.foot {
+    width: 93vw;
+    height: 63vh;
+    background-color: #FE7941;
+    margin-top: 80px;
+    margin-left: 43px;
+    border-radius: 40px;
+}
+.foot h1 {
+    margin-left: 80px;
+    padding-top: 70px;
+    margin-right: 20px;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:500;
+    font-size: 5.6rem;
+}
+.foot h6{
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 1.5vw;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+.foot a button {
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    float: left;
+    margin-left: 80px;
+    margin-top: 30px;
+    padding: 15px 30px;
+}
+.foot a button {
+    position: relative;  
+    transition: transform 0.3s ease;
+}
+.foot a button:hover {
+    transform: scale(1.1);
+}
+.foot img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top: -320px;
+    border-radius: 50%;
+}
+.foot img {
+    position: relative;  
+    transition: transform 0.3s ease;
+}
+.foot img:hover {
+    transform: scale(1.1);
+}
+.foot .child1 a {
+    position: relative;
+    margin-top: 79px;
+    margin-left: -870px;
+    margin-right: 500px;
+}
+.foot h3{
+    color: black;
+    font-size: 1.2vw;
+    z-index: 2;
+    margin-left: 1100px;
+    margin-top: 150px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.blackout {
+    width: 93vw;
+    height: 5vh;
+    background-color: black;
+}
+@media (max-width:600px){
+    .foot {
+        width: 95vw;
+        height: 30vh;
+        margin-left: 10px;
+    }
+    .foot h1 {
+        margin-left: 30px;
+        padding-top: 30px;
+        font-size: 9vw;
+        text-align: center;
+        font-weight: 600;
+    }
+    .foot h6 {
+        font-size: 4vw;
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+    .foot a button {
+        margin-left: 40px;
+    }
+    .foot h3{
+        font-size: 4vw;
+        margin-left: 90px;
+        margin-top: 100px;
+    }
+    .foot img {
+        width: 80px;
+        height: 80px;
+        margin-top: -120px;
+        margin-right: 40px;
+    }
+    .blackout{
+        width: 93vw;
+        height: 7vh;
     }
 }
 
