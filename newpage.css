@@ -654,6 +654,11 @@ button {
 .book1:hover {
     transform: scale(1.1);
 }
+.book1 img {
+    height: 53vh;
+    width: 20vw;
+    border-radius: 40px;
+}
 .book2 {
     width: 20vw;
     height: 52vh;
@@ -669,6 +674,11 @@ button {
 .book2:hover {
     transform: scale(1.1);
 }
+.book2 img {
+    height: 53vh;
+    width: 20vw;
+    border-radius: 40px;
+}
 .book3 {
     width: 20vw;
     height: 52vh;
@@ -683,6 +693,11 @@ button {
 }
 .book3:hover {
     transform: scale(1.1);
+}
+.book3 img {
+    height: 53vh;
+    width: 20vw;
+    border-radius: 40px;
 }
 @media (max-width:600px) {
     .shade {
